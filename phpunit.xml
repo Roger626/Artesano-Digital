@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<phpunit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://schema.phpunit.de/11.0/phpunit.xsd" bootstrap="vendor/autoload.php" colors="true" executionOrder="random" failOnWarning="true" failOnRisky="true" failOnEmptyTestSuite="true" beStrictAboutOutputDuringTests="true" cacheDirectory=".phpunit.cache">
+  <testsuites>
+    <testsuite name="Unit">
+      <directory>test</directory>
+    </testsuite>
+  </testsuites>
+  <php>
+    <env name="APP_ENV" value="testing"/>
+    <ini name="error_reporting" value="-1"/>
+  </php>
+  <source>
+    <include>
+      <directory suffix=".php">models</directory>
+      <directory suffix=".php">controllers</directory>
+      <directory suffix=".php">utils</directory>
+    </include>
+    <exclude>
+      <directory>vendor</directory>
+      <directory>test</directory>
+    </exclude>
+  </source>
+</phpunit>
