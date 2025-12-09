@@ -40,7 +40,7 @@ class ControladorCarrito
         }
 
         $datos = [
-            'titulo' => 'Carrito de Compras',
+            'titulo' => 'Tu Carrito de Compras',
             'productos' => $productos,
             'total' => $total
         ];

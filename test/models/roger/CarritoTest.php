@@ -84,6 +84,7 @@ class CarritoTest extends TestCase{
         $this->expectExceptionMessage("Error al gestionar carrito");
         
         $this->carrito->obtenerOCrearCarrito(999);
+        
     }
 
     // 3. agregar: Producto nuevo, cantidad=1, stock OK.
